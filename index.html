@@ -1,53 +1,60 @@
-var name, product, price, discount, quantity;
+var calcu = function(calcValue) {
 
-var name = prompt("Welcome to . What is your name?","Enter name");
-var sentence = "Hello " + name + " please look through our available products and services before placing your order.";
-alert(sentence);
+  /* "calc.output.value += "1";"" use to output numbers? */
 
-var product = prompt("Please enter the name of the product you are looking to purchase from the table.","Enter product");
-var quantity = 1*prompt("How many " + product + " would you like to purchase?","Enter quantity");
+  if (calcValue) {
 
-var cost= price * quantity;
-var orderdiscount= price * discount * quantity;
-var totalcost= cost - orderdiscount;
 
-a = confirm(+ name + ", you ordered " + quantity + " of " + product + ". Is this correct?");
+  }
+};
 
-if (a)
-{
-	total= cost - (price * discount * quantity);
-		if (product == "ice cream cake")
-		{
-				price = 20;
-				discount = .15;
-		}
-		else if (product == "ice cream cone")
-		{
-				price = 3;
-				discount = .01;
-		}
-		else if (product == "small ice cream sundae")
-		{
-				price = 5;
-				discount = .05;
-		}
-		else if (product == "large ice cream sundae")
-		{
-				price = 6;
-				discount = .05;
-		}
-		else if (prompt=("Sorry, " + name + ". You entered an invalid product. Refresh the page to reload and place the order again."))
-		{}
+document.getElementById(inputs[i].id).onclick = calcu;
+for (var i = 0; i <= inputs[id].length, i++) {
+  /* input button elements onlick handler needs to be set to (equal to?) a
+       function that calls the calcu variable inside of it */
+  if (input.type = button) {
+
+    console.log()
+
+    /* Need input that is not a button to be skipped*/
+  } else(input.type != button) {
+
+  }
+
 }
-else
-{
-	alert("Refresh the page to reload and place a new order");
-}
+<body>
+  <div id="content">
+    <div id="calculator-container">
+      <!-- DO NOT CHANGE THE FORM! Only use external JavaScript files -->
+      <form name="calc">
+        <label for="output">A Basic Calculator</label>
+        <!-- the name of the textbox is "output" -->
+        <input id="output" name="output" type="text" readonly>
 
-[U]document.write("Thank you for placing an order with us, " + name + ".");
-document.write("</br>");
-document.write("The cost of buying " + quantity + " of " + product + " is " + cost + ".");
-document.write("</br>");
-document.write("The discount for this purchase is " + orderdiscount + ".");
-document.write("</br>");
-document.write("With the discount, your total order cost is " + totalcost + ".");[/U]
+        <br>
+        <input type="button" id="1" value="  1  ">
+        <input type="button" id="2" value="  2  ">
+        <input type="button" id="3" value="  3  ">
+        <input type="button" id="+" value="  +  ">
+        <br>
+        <input type="button" id="4" value="  4  ">
+        <input type="button" id="5" value="  5  ">
+        <input type="button" id="6" value="  6  ">
+        <input type="button" id="-" value="  -  ">
+        <br>
+        <input type="button" id="7" value="  7  ">
+        <input type="button" id="8" value="  8  ">
+        <input type="button" id="9" value="  9  ">
+        <input type="button" id="*" value="  x  ">
+        <br>
+        <input type="button" id="c" value="  C  ">
+        <input type="button" id="0" value="  0  ">
+        <input type="button" id="equate" value="  =  ">
+        <input type="button" id="/" value="&divide;">
+      </form>
+    </div>
+
+  </div>
+
+</body>
+Expand snipp
