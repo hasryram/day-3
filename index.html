@@ -1,0 +1,53 @@
+var name, product, price, discount, quantity;
+
+var name = prompt("Welcome to . What is your name?","Enter name");
+var sentence = "Hello " + name + " please look through our available products and services before placing your order.";
+alert(sentence);
+
+var product = prompt("Please enter the name of the product you are looking to purchase from the table.","Enter product");
+var quantity = 1*prompt("How many " + product + " would you like to purchase?","Enter quantity");
+
+var cost= price * quantity;
+var orderdiscount= price * discount * quantity;
+var totalcost= cost - orderdiscount;
+
+a = confirm(+ name + ", you ordered " + quantity + " of " + product + ". Is this correct?");
+
+if (a)
+{
+	total= cost - (price * discount * quantity);
+		if (product == "ice cream cake")
+		{
+				price = 20;
+				discount = .15;
+		}
+		else if (product == "ice cream cone")
+		{
+				price = 3;
+				discount = .01;
+		}
+		else if (product == "small ice cream sundae")
+		{
+				price = 5;
+				discount = .05;
+		}
+		else if (product == "large ice cream sundae")
+		{
+				price = 6;
+				discount = .05;
+		}
+		else if (prompt=("Sorry, " + name + ". You entered an invalid product. Refresh the page to reload and place the order again."))
+		{}
+}
+else
+{
+	alert("Refresh the page to reload and place a new order");
+}
+
+[U]document.write("Thank you for placing an order with us, " + name + ".");
+document.write("</br>");
+document.write("The cost of buying " + quantity + " of " + product + " is " + cost + ".");
+document.write("</br>");
+document.write("The discount for this purchase is " + orderdiscount + ".");
+document.write("</br>");
+document.write("With the discount, your total order cost is " + totalcost + ".");[/U]
